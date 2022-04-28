@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="8dp"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="14dp">
+
+        <TextView
+            android:id="@+id/td_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_toStartOf="@id/cardView"
+            android:text="@string/Sample_teacher_detail_list_item_name"
+            android:textColor="@color/purple_main"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cardView" />
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="128dp"
+            android:scrollbars="none"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/td_name"
+
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/td_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/Sample_teacher_detail_list_item_subject"
+                android:textColor="@color/black_600"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/td_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="@string/dot"
+
+                android:textColor="@color/black_600"
+                android:textSize="16sp"
+
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/td_subject"
+                app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/td_qualifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vellore Institute of Technology"
+            android:maxLines="1"
+            android:textColor="@color/black_600"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/td_dot"
+             />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+</HorizontalScrollView>
+
+        <Button
+            android:id="@+id/td_btnViewMore"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:backgroundTint="#FF6200EE"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="@string/view_more"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:cornerRadius="12dp"
+            app:layout_constraintBottom_toBottomOf="@id/cardView"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            app:cardBackgroundColor="@color/purple_100"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/td_imgTeacher"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Photo pf teacher"
+                android:scaleType="matrix" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

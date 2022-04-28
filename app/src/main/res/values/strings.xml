@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">pw_task</string>
+    <string name="Main_title">HOME</string>
+    <string name="No_Internet_msg">NO INTERNET</string>
+    <string name="view_more">View More</string>
+    <string name="dot">\u0020•\u0020 </string>
+    <string name="API_Link">https://my-json-server.typicode.com/easygautam/data/users</string>
+    <string name="Internet_Warning">Not connected to Internet</string>
+    <string name="Data_Conversion_Error">Data Conversion Error</string>
+    <string name="Sample_teacher_detail_list_item_name">Sunjol Singh Paul</string>
+    <string name="Sample_teacher_detail_list_item_subject">Chemistry</string>
+</resources>
